@@ -6,13 +6,13 @@
           define("VERSION", wp_get_theme()->get("VERSION"));
      }
 
+     function devuteAlpha_after_done(){
+          load_theme_textdomain("wpNewsPortal"); 
+          add_theme_support("post-thumbnails"); 
+          add_theme_support("title-tag");                   
+          add_theme_support("custom-background");      
+          add_theme_support( "custom-header" );            
 
-     load_theme_textdomain("wp-news"); 
-     add_theme_support("post-thumbnails"); 
-     add_theme_support("title-tag");                   
-     add_theme_support("custom-background");      
-     add_theme_support( "custom-header" );            
-
- 
+     }
 
 require get_template_directory() . '/inc/wp-news_assets.php';
