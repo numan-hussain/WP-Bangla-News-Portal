@@ -1,13 +1,5 @@
 <?php  
-
-
-
-		
-
-
-
-
-
+ 
 function boxCssAndJs(){
  
 	  

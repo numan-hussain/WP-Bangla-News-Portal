@@ -1,5 +1,10 @@
 <?php
-
+     // remove cache in dev site
+     if(site_url()=="http://localhost/myfiles/wp-local"){
+          define("VERSION", time());
+     }else {
+          define("VERSION", wp_get_theme()->get("VERSION"));
+     }
 
 
      load_theme_textdomain("wp-news"); 
